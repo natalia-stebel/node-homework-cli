@@ -1,0 +1,32 @@
+{
+  "name": "homework-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "start:dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natalia-stebel/node-homework-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natalia-stebel/node-homework-cli/issues"
+  },
+  "homepage": "https://github.com/natalia-stebel/node-homework-cli#readme",
+  "dependencies": {
+    "chalk": "^5.1.2",
+    "cjs-loader": "^0.1.0",
+    "core-util-is": "^1.0.3",
+    "cors-anywhere": "^0.4.4",
+    "nanoid": "^4.0.0",
+    "yargs": "^17.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
