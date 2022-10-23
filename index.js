@@ -37,9 +37,7 @@ const {
   
         case "remove":
             const newContactsSet = await removeContact(id)
-            if (!newContactsSet) {
-              return
-            }
+            console.log(newContactsSet)
               console.log('Contact has been deleted')
             break;
   
