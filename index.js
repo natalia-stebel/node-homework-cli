@@ -1,8 +1,5 @@
 const argv = require("yargs").argv
 
-// const chalk = require('chalk')
-
-
 const {
     listContacts,
     getContactById,
@@ -15,7 +12,7 @@ const {
     
       switch (action) {
         case "list":
-          const list = await listContacts();
+          const contacts = await listContacts();
           console.table(contacts);
           break;
   
@@ -25,7 +22,7 @@ const {
               console.table(contactById)
               return
             }
-            console.log('Contact not found')
+            console.logd('Contact not found')
             break;
   
         case "add":
@@ -33,7 +30,7 @@ const {
                 console.log('Entered data is not correct')
                 return
               }
-              const newContact = await addContact(name, email, phone)
+              const newContact = await addContact({name, email, phone})
               console.log('New contact has been added')
               console.table(newContact)
               break;
